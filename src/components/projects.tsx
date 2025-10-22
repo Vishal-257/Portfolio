@@ -4,10 +4,10 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 const Projects = () => {
   const words = [
     {
-      text: "My",
+      text: "My", className:"text-4xl"
     },
     {
-      text: "Projects",
+      text: "Projects", className:"text-4xl"
     },
   ];
   return (

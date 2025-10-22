@@ -17,7 +17,7 @@ export const Projects = [
     description: "API, Axios, JavaScript",
     title: "Weather App",
     src: "/componentsAssests/Weather_App.png",
-    ctaText: "Play",
+    ctaText: "Go to Github",
     ctaLink: "https://github.com/Vishal-257/Weather_App",
     content: () => {
       return (
@@ -32,7 +32,7 @@ export const Projects = [
     description: "API, Axios, CRUD, JavaScript",
     title: "Blog App",
     src: "/componentsAssests/Blog_App.png",
-    ctaText: "Play",
+    ctaText: "Go to Github",
     ctaLink: "https://github.com/Vishal-257/Blog_App_Using_OwnAPI",
     content: () => {
       return (
