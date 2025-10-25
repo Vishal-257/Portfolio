@@ -4,7 +4,6 @@ import React from "react";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { BiLogoGmail } from "react-icons/bi";
 import { RiLinkedinFill } from "react-icons/ri";
-import { cn } from "@/lib/utils";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import MagicButton from "@/components/ui/MagicButton";
 import { AiOutlineRight } from "react-icons/ai";
@@ -45,7 +44,7 @@ const Hero = () => {
         <div className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">
           <div className="m-auto text-center flex justify-center items-center flex-col">
             <h3 className="font-mono text-xl sm:text-2xl">
-              Vishal's Portfolio
+              Vishal&apos;s Portfolio
             </h3>
             <div className="flex justify-center items-center w-full mt-4 mb-6">
               <TextGenerateEffect

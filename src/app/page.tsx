@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Hero from "../../pages/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 

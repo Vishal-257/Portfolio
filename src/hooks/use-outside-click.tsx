@@ -1,13 +1,10 @@
-// ✅ CHANGED: Updated the type of `ref` parameter
-import { useEffect } from "react";
 import React from "react";
 export function useOutsideClick(
-  ref: React.RefObject<HTMLElement | null>, // ⬅️ CHANGED HERE
+  ref: React.RefObject<HTMLElement | null>,
   handler: () => void
 ) {
   React.useEffect(() => {
     function handleClick(event: MouseEvent) {
-      // ✅ CHANGED: Added null check safely
       if (ref.current && !ref.current.contains(event.target as Node)) {
         handler();
       }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useState } from "react";
@@ -32,7 +33,7 @@ export default function ContactForm() {
         alert("Failed to send message. Please try again.");
       }
     } catch (error) {
-      alert("An error occurred. Please try again.");
+      alert("An error occurred. Please try again. Code:"+error);
     } finally {
       setIsSubmitting(false);
     }

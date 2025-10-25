@@ -1,5 +1,5 @@
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
-
+/* eslint-disable @next/next/no-img-element */
 export default function Experience(){
     const exp = [{text:"Experience", className:"text-4xl"}]
     return (

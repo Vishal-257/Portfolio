@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export const Projects = [
   {
     description: "ReactJs, NextJs, ExpressJs, Tailwind CSS, MUI, React Icons",

@@ -1,5 +1,7 @@
 "use client";
-import React, { useState } from "react";
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+import React, { ReactNode, useState } from "react";
 import {
   motion,
   AnimatePresence,
@@ -16,7 +18,7 @@ export const FloatingNav = ({
   navItems: {
     name: string;
     link: string;
-    icon?: JSX.Element;
+    icon?: ReactNode;
   }[];
   className?: string;
 }) => {
@@ -27,7 +29,7 @@ export const FloatingNav = ({
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
-      let direction = current! - scrollYProgress.getPrevious()!;
+      const direction = current! - scrollYProgress.getPrevious()!;
 
       if (scrollYProgress.get() < 0.05) {
         setVisible(false);
