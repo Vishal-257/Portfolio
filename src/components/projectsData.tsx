@@ -2,9 +2,9 @@ export const Projects = [
   {
     description: "ReactJs, NextJs, ExpressJs, Tailwind CSS, MUI, React Icons",
     title: "Portfolio",
-    src: "componentsAssests/Portfolio.png",
+    src: "/componentsAssests/Portfolio.png",
     ctaText: "Go to Github",
-    ctaLink: "/home",
+    ctaLink: "https://github.com/Vishal-257/Portfolio",
     content: () =>{
       return(
         <p>
