@@ -8,7 +8,7 @@ export default function Experience(){
                 <TypewriterEffectSmooth words={exp}/>
             </div>
 
-            <div className=" border-none m-10 sm:w-160 md:w-200 hover:scale-103 transition-all gap-4 py-10 px-0 sm:px-10 bg-gray-950 shadow-lg shadow-gray-600 h-fit flex flex-col sm:flex-row sm:h-96 rounded-3xl">
+            <div className=" m-5 sm:m-10 sm:w-160 md:w-200 hover:scale-103 transition-all gap-4 py-10 pr-5 sm:px-10 bg-black border border-white/[0.2] shadow-lg shadow-gray-600 h-fit flex flex-col sm:flex-row sm:h-96 rounded-3xl">
                 <div className="items-center flex justify-center mb-5 sm:m-0">
                     <img src="/componentsAssests/Valsco.png" className="rounded-[50%] h-10 w-10 sm:h-30 sm:w-40" alt="Company logo" />                   
                 </div>

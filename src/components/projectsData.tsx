@@ -1,10 +1,26 @@
+import { title } from "process";
+
 export const Projects = [
+  {
+    description: "ReactJs, NextJs, ExpressJs, Tailwind CSS, MUI, React Icons",
+    title: "Portfolio",
+    src: "componentsAssests/Portfolio.png",
+    ctaText: "Go to Github",
+    ctaLink: "/home",
+    content: () =>{
+      return(
+        <p>
+          I built this portfolio using React, Next.js, and Tailwind CSS to showcase my projects and technical skills. It highlights my expertise in building modern, responsive, and high-performance web applications with clean UI and efficient code practices.
+        </p>
+      )
+    }
+  },
   {
     description: "ReactJs, PostgreSQL, ExpressJs",
     title: "Quiz App",
     src: "/componentsAssests/Quiz_App.png",
     ctaText: "Go to Github",
-    ctaLink: "",
+    ctaLink: "https://github.com/Vishal-257/Quiz_App",
     content: () => {
       return (
         <p>

@@ -14,6 +14,7 @@ import Projects from "@/components/projects";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import Experience from "@/components/experience";
 import ContactForm from "@/components/contact";
+import Certifications from "@/components/certifications";
 
 const Hero = () => {
   const data = skillsList;
@@ -88,6 +89,9 @@ const Hero = () => {
       </div>
       <div>
         <Experience/>
+      </div>
+      <div>
+        <Certifications/>
       </div>
       <div className="border-t-1 w-1/2 m-auto mb-10 border-gray-500"></div>
       <footer className=" bg-radial from-gray-800 from-10% via-gray-900 via-30% to-black to-80%">
