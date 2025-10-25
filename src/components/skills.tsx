@@ -2,7 +2,7 @@ const skillsList = [
         { title: "React", altText:"skill_png", imgUrl: '/physics (1).png',key:"1" },
         { title: "TypeScript", altText:"skill_png ", imgUrl: '/typescript.png',key:"3" },
         { title: "PostgreSQL", altText:"skill_png ", imgUrl: '/postgre.png',key:"5" },
-        { title: "Tailwind CSS", altText:"skill_png ", imgUrl: '/tailwind CSS.png',key:"6" },
+        { title: "Tailwind CSS", altText:"skill_png ", imgUrl: '/tailwindCSS.png',key:"6" },
         { title:"mySQL", altText:"skill_png ", imgUrl: '/mysql-database.png',key:"24" },
         { title:"API", altText:"skill_png ", imgUrl: '/api.png',key:"25" },
         { title: "JavaScript", altText:"skill_png ", imgUrl: '/js.png',key:"7" },
