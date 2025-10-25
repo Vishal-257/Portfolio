@@ -1,4 +1,4 @@
-import Hero from "../../pages/Hero";
+import Hero from "../pages/Hero";
 import { FloatingNav } from "@/components/ui/floating-navbar";
 
 export default function Home() {
