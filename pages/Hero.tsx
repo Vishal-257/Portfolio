@@ -3,20 +3,17 @@ import { MdCall } from "react-icons/md";
 import React from "react";
 import { PiGithubLogoFill } from "react-icons/pi";
 import { BiLogoGmail } from "react-icons/bi";
-import { RiLinkedinFill } from "react-icons/ri";
+import { RiJavaFill, RiLinkedinFill } from "react-icons/ri";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import MagicButton from "@/components/ui/MagicButton";
 import { AiOutlineRight } from "react-icons/ai";
-import Grid from "@/components/grid";
-import { skillsList } from "@/components/skills";
 import Projects from "@/components/projects";
 import { TypewriterEffectSmooth } from "@/components/ui/typewriter-effect";
 import Experience from "@/components/experience";
 import ContactForm from "@/components/contact";
 import Certifications from "@/components/certifications";
-
+import Skills from "@/components/skills"
 const Hero = () => {
-  const data = skillsList;
   const words = " I don't just build websites, I build experiences.";
   const skillTitle = [
     {
@@ -27,7 +24,7 @@ const Hero = () => {
     },
   ];
   return (
-    <div className="p-5 sm:p-10 w-full md:p-10 sm:pt-15 md:pt-10">
+    <div className="pt-5 sm:p-10 w-full md:p-10 sm:pt-15 md:pt-10">
       <div className="w-full">
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
@@ -39,7 +36,7 @@ const Hero = () => {
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
       </div>
-      <div id="home" className="relative flex min-h-screen w-full items-center justify-center bg-white dark:bg-black">
+      <div id="home" className="relative fade-in flex min-h-screen w-full items-center justify-center bg-white dark:bg-black">
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
         <div className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-4xl font-bold text-transparent sm:text-7xl">
           <div className="m-auto text-center flex justify-center items-center flex-col">
@@ -58,7 +55,7 @@ const Hero = () => {
               Frontend/Backend Technology, delivering scalable, client-focused
               applications and am committed to writing clean, maintainable code.
             </p>
-            <a href="#projects">
+            <a href="#projects" className="pop-in">
               <MagicButton
                 otherClasses="w-40"
                 icon={<AiOutlineRight />}
@@ -67,12 +64,15 @@ const Hero = () => {
             </a>
           </div>
         </div>
+        
       </div>
-      <div id="skills" className="flex flex-col justify-center items-center">
+      <div id="skills" className="flex w-full flex-col justify-center items-center">
+
             <TypewriterEffectSmooth words={skillTitle} />
-          </div>
+      </div>
       <div className="w-full overflow-x-auto scrollbar-thin scrollbar-thumb-gray-500 scrollbar-track-transparent">
-        <div className="flex flex-row w-max animate-infinite-scroll space-x-6 py-10 px-5 md:px-10 lg:px-20 2xl:px-40">
+        <Skills/>
+        {/* <div className="flex flex-row w-max animate-infinite-scroll space-x-6 py-10 px-5 md:px-10 lg:px-20 2xl:px-40">
           {data.map((item, index) => (
             <Grid
               key={index}
@@ -81,7 +81,7 @@ const Hero = () => {
               imgUrl={item.imgUrl}
             />
           ))}
-        </div>
+        </div> */}
       </div>
       <div id="projects">
         <Projects />
