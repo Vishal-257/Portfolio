@@ -19,12 +19,17 @@ export default function ExpCard() {
     );
     observer.observe(newRef);
 
-    return ()=>{observer.unobserve(newRef)}
-  }),[];
+    return () => {
+      observer.unobserve(newRef);
+    };
+  }),
+    [];
   return (
     <div
       ref={currentRef}
-      className={`${isVisible?"pop-in":"opacity-0"} exp h-fit w-fit md:w-150 mx-10 flex flex-row gap-4 text-white duration-300 mt-0 sm:mt-10 hover:-translate-y-5 bg-gray-950 p-5 hover:shadow-lg hover:shadow-purple-700 rounded-xl`}
+      className={`${
+        isVisible ? "pop-in" : "opacity-0"
+      } exp h-fit w-fit md:w-150 mx-10 flex flex-row gap-4 text-white duration-300 mt-0 sm:mt-10 hover:-translate-y-5 bg-gray-950 p-5 hover:shadow-lg hover:shadow-purple-700 rounded-xl`}
     >
       <div className="logo text-purple-800 ">
         <LuBriefcase className="text-lg sm:text-2xl mt-1" />
@@ -41,17 +46,20 @@ export default function ExpCard() {
           <div className="work text-sm md:text-base mt-3">
             <ul className=" list-disc">
               <li className="mb-2">
-                Developed 2 responsive web applications using React.js, Tailwind
-                CSS, and REST APIs, improving page load speed by 20%.
+                As the Project lead, I coordinated with the client, design and
+                development teams to deliver 2 responsive web applications.
+                Clarified requirements, reduced rework, and supported timely
+                project delivery.
               </li>
               <li className="mb-2">
                 Collaborated with a 4-member design team to implement
                 user-friendly and visually consistent interfaces, enhancing user
-                engagement.
+                engagement and improved page response speed by 20%.
               </li>
               <li className="mb-2">
-                Utilized Git and GitHub for version control, ensuring seamless
-                collaboration and 100% code version integrity across the team.{" "}
+                Utilized Git and GitHub for version control and structured team
+                collaboration, maintaining full code integrity and smooth team
+                workflows.{" "}
               </li>
             </ul>
           </div>
